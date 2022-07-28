@@ -6,7 +6,7 @@ export default function Footer(){
                 <span>PokeLib </span> &copy;2022 
                 
             </p>
-           <p>Devoloped by <span><i>@WagnerMateus</i></span> </p> 
+           <p>Devloped by <span><i>@WagnerMateus</i></span> </p> 
         </footer>
     );
 }
