@@ -3,8 +3,10 @@ export default function Footer(){
     return(
         <footer className={styles.footer}>
             <p>
-                <span>PokeLib </span> &copy;2022
+                <span>PokeLib </span> &copy;2022 
+                
             </p>
+           <p>Devoloped by <span><i>@WagnerMateus</i></span> </p> 
         </footer>
     );
 }
