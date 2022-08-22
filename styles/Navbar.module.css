@@ -8,6 +8,20 @@
     background-color: #333;
     color: #fff;
 }
+.navbarWithHamburgerMenu{
+ display: flex;
+ gap: 8em;
+}
+.navbarWithHamburgerMenu button{
+    width: 3.5em;
+    
+}
+.hamburgerNavbar {
+    flex-direction: column;
+    height: 70vh;
+    align-items: center;
+    justify-content: flex-start;   
+}
 .logo{
     display: flex;
     justify-content: center;
@@ -16,14 +30,14 @@
 .logo h1{
     margin-left: .5em;
 }
-.link_items{
+.link_items, .menuHamburger{
     display: flex;
     list-style: none;
 }
 .link_items li{
     margin-right: 1.3em;
 }
-.link_items a{
+.link_items a, .menuHamburger a{
     color: #fff;
     text-decoration: none;
     padding: 5px;
@@ -33,10 +47,26 @@
 .link_items a:hover{
     border-color: #fff;
 }
+.menuHamburgerBtn {
+    display:none;
+}
+.menuHamburger {  
+    flex-direction: column;
+    gap: 2.5em;
+}
+.menuHamburger li{
+    margin-top: 3rem;
+    border-bottom: 1px solid red;
+}
 @media(max-width: 366px){
     .navbar{ 
      gap: 1.5em;
     }
+    .link_items{
+        display: none;
+    }
+   .menuHamburgerBtn {
+    display: block;
+   }
 
-   
 }
