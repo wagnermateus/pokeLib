@@ -13,11 +13,17 @@ margin-right: 0.4em;
 .title span {
     color: #333;
 }
-.pokemon_container{
+.pokemon_container{ 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     max-width: 1100px;
     margin: 0 auto;
+}
+@media (max-width: 374px) {
+    .pokemon_container{       
+        justify-content: center;  
+    }
+
 }

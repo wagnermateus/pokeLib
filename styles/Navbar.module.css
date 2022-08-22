@@ -1,5 +1,6 @@
 .navbar{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 1em 1.2em;
@@ -31,4 +32,11 @@
 }
 .link_items a:hover{
     border-color: #fff;
+}
+@media(max-width: 366px){
+    .navbar{ 
+     gap: 1.5em;
+    }
+
+   
 }
