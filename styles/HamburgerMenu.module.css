@@ -7,6 +7,7 @@
     margin-bottom: 2em;
     background-color: #333;
     color: #fff;
+   
 }
 .hamburgerNavbar{
     display: flex;
@@ -18,11 +19,13 @@
 }
 .link_items {
     display: flex;
+  
     flex-direction: column;
     min-height: 100vh;
     align-items: center;
     gap: 10em;
     list-style: none;
+    
         
 }
 .link_items a{

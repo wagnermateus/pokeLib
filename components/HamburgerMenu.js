@@ -1,19 +1,21 @@
 import Link from "next/link";
-import { useState } from "react";
+
 
 import Image from "next/image";
 
 import "bootstrap-icons/font/bootstrap-icons.css";
 import styles from "../styles/HamburgerMenu.module.css";
+import { useState } from "react";
 
-export default function hamburgerMenu() {
-  const [menuHamburgerBtnIsOpen, setMenuHamburgerBtnIsOpen] = useState(false);
-
+export default function HamburgerMenu() {
+  
+  const [menuHamburgerBtnIsOpen , setMenuHamburgerBtnIsOpen] = useState(false);
   function showHamburgerMenuBtn() {
     setMenuHamburgerBtnIsOpen(!menuHamburgerBtnIsOpen);
   }
-
+  
   return (
+    
     <div className={styles.navbar}>
       <div className={styles.hamburgerNavbar} >
         <div>
@@ -28,7 +30,7 @@ export default function hamburgerMenu() {
           </div>
         </div>
         <div>
-          {menuHamburgerBtnIsOpen ? (
+          {menuHamburgerBtnIsOpen === true ? (
             <i
               id="menuHamburgerBtn"
               className={styles.icon + " " + "bi bi-x"}
