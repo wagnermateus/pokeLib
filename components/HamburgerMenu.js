@@ -1,23 +1,21 @@
 import Link from "next/link";
 
-
 import Image from "next/image";
 
 import "bootstrap-icons/font/bootstrap-icons.css";
 import styles from "../styles/HamburgerMenu.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function HamburgerMenu() {
-  
-  const [menuHamburgerBtnIsOpen , setMenuHamburgerBtnIsOpen] = useState(false);
+  const [menuHamburgerBtnIsOpen, setMenuHamburgerBtnIsOpen] = useState(false);
+
   function showHamburgerMenuBtn() {
     setMenuHamburgerBtnIsOpen(!menuHamburgerBtnIsOpen);
   }
-  
+
   return (
-    
     <div className={styles.navbar}>
-      <div className={styles.hamburgerNavbar} >
+      <div className={styles.hamburgerNavbar}>
         <div>
           <div className={styles.logo}>
             <Image

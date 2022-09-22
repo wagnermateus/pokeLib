@@ -5,7 +5,7 @@ import Image from "next/image";
 import styles from "../styles/Navbar.module.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import HambugerMenu from "./HamburgerMenu";
-import { useEffect, useState } from "react";
+
 export default function Navbar() {
 
   return (
